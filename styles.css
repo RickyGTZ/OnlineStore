@@ -195,3 +195,20 @@ nav a.active {
   outline: none;
   border-color: #333;
 }
+.reviews {
+  margin-top: 2rem;
+}
+
+#reviews-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#reviews-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#reviews-list li:last-child {
+  border-bottom: none;
+}
