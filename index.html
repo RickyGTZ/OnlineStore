@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+ <header>
+    <h1>My Online Store</h1>
+    <nav>
+        <div class="cart">
+            <a href="checkout.html">Cart: <span id="cart-count">0</span></a>
+          </div>               
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filter">
+        <label for="category-filter">Filter by category:</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+          <option value="category3">Category 3</option>
+        </select>
+      </div>      
+    <h2>Featured Products</h2>
+      <div class="product" data-category="category1">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Product 1</h3>
+        <p>$99.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" data-category="category1">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Product 2</h3>
+        <p>$99.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" data-category="category2">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Product 3</h3>
+        <p>$99.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" data-category="category3">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Product 4</h3>
+        <p>$99.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" data-category="category1">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Product 5</h3>
+        <p>$99.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" data-category="category3">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Product 6</h3>
+        <p>$99.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- Add more product items here -->
+    </div>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2023 My Online Store. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+  <div id="cart-overlay" class="hidden">
+    <div class="cart-content">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be added here -->
+      </ul>
+      <button id="close-cart">Close Cart</button>
+    </div>
+  </div>  
+</body>
+</html>
