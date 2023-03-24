@@ -130,4 +130,37 @@ body, h1, h2, p {
       font-size: 1.5rem;
     }
   }
-  
+  /* Form styles */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
